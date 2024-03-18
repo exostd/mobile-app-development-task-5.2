@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="products">choose products</string>
+    <string-array name="userName">
+        <item>Apple</item>
+        <item>broccoli</item>
+        <item>milk</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="apple_description">An apple is a round, edible fruit produced by an apple tree Apple trees are cultivated worldwide and are the most widely grown</string>
+    <string name="apple">Apple</string>
+    <string name="broccoli">Broccoli</string>
+    <string name="broccoli_description">Broccoli, or cabbage, is an annual vegetable plant of the Brassica family, a variety of cabbage. Closest relative and genetic predecessor of cauliflower</string>
+    <string name="milk">milk</string>
+    <string name="milk_description">Milk is a nutritious fluid produced by the mammary glands of female mammals during lactation.</string>
+</resources>

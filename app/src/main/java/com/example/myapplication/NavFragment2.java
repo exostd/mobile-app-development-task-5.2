@@ -27,7 +27,7 @@ public class NavFragment2 extends Fragment {
 
         textViewName.setText(R.string.apple);
         textViewDescription.setText(R.string.apple_description);
-        imageView.setImageResource(R.drawable.product1_background);
+        imageView.setImageResource(R.drawable.product1);
         return view;
     }
 }

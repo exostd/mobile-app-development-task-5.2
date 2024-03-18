@@ -34,6 +34,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         Product product = productList.get(position);
         holder.imageView.setImageResource(product.getImage());
         holder.textView.setText(product.getName());
+        Log.d("RRR",product.getName());
         holder.itemView.setOnClickListener(v -> onProductClickListener.onProductClick(product));
     }
 

@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,7 +31,7 @@ public class NavFragment1 extends Fragment implements ProductAdapter.OnProductCl
         String[] productNames = getResources().getStringArray(R.array.userName);
         List<Product> productList = new ArrayList<>();
 
-        int[] productImages = {R.drawable.product1_background, R.drawable.product2, R.drawable.product3};
+        int[] productImages = {R.drawable.product1, R.drawable.product2, R.drawable.product3};
 
         for (int i = 0; i < productNames.length; i++) {
             Product product = new Product(productNames[i], productImages[i]);
@@ -47,24 +48,18 @@ public class NavFragment1 extends Fragment implements ProductAdapter.OnProductCl
     @Override
     public void onProductClick(Product product) {
         Toast.makeText(getActivity(), "Clicked on " + product.getName(), Toast.LENGTH_SHORT).show();
-        Fragment fragment = null;
         switch (product.getName()) {
             case "Apple":
-                fragment = new NavFragment2();
+                Navigation.findNavController(getView()).navigate(R.id.action_navFragment1_to_navFragment2);
                 break;
             case "Broccoli":
-                fragment = new NavFragment3();
+                Navigation.findNavController(getView()).navigate(R.id.action_navFragment1_to_navFragment3);
                 break;
             case "Milk":
-                fragment = new NavFragment4();
+                Navigation.findNavController(getView()).navigate(R.id.action_navFragment1_to_navFragment4);
                 break;
         }
-        if (fragment != null) {
-            getParentFragmentManager().beginTransaction()
-                    .replace(R.id.nav_host_fragment, fragment)
-                    .addToBackStack(null)
-                    .commit();
-        }
+
     }
 }
 

@@ -6,6 +6,16 @@
         <item>Broccoli</item>
         <item>Milk</item>
     </string-array>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="apple_description">An apple is a round, edible fruit produced by an apple tree Apple trees are cultivated worldwide and are the most widely grown</string>
     <string name="apple">Apple</string>
